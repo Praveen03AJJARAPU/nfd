@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+    background: violet;
+    border: 0px;
+    padding: 12px 40px;
+    color: white; 
+    position: relative;
+    border-radius: 10px;   
+
+}
+.button:before,
+.button:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+
+.button:before {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    background: violet;
+    transform: rotate(45deg);
+    top: 3.8px;
+    left: 2.9px;
+    z-index:2
+}
+.button:after {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background: violet;
+    transform: rotate(45deg);
+    bottom: 3px;
+    right: 2.7px;
+    z-index:2
+}
+.top {
+    width: 10px;
+    height: 40px;
+    background: white;
+    position: absolute;
+    /* border: 1px solid black; */
+    top: -18px;
+    left: 0px;
+    transform: rotate(45deg);
+}
+.bottom {
+    width: 10px;
+    height: 40px;
+    background: white;
+    position: absolute;
+    /* border: 1px solid black; */
+    bottom: -18px;
+    right: 0px;
+    transform: rotate(45deg);
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 17%, rgba(0, 0, 0, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.blockImg {
+    transform: translateX(-1)
+}
+
+a {
+    text-decoration: underline;
+}
+
+.round {
+    border-radius: 30px;
+    font-family: Poppins;
+}
+
+
+/* .btn {
+    clip-path: polygon(0 15%, 21% 0, 100% 0, 100% 22%, 84% 36%, 0 37%);
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+} */
+
+
+.btn-content {
+
+    width: 180px;
+    padding: 19px 0;
+    height: 180px;
+    clip-path: polygon(0 15%, 21% 0, 100% 0, 100% 22%, 84% 36%, 0 37%);
+}
+
+.layout {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-bottom: 50px solid #ef4344;  
+    border-radius: 15px;
+
+}
+/* Polygon 1 */
+.fixed {
+    position: fixed;
+    top: 0;
+    
+}
